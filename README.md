@@ -19,3 +19,10 @@ $ python manage.py runserver 0.0.0.0:8000 (el puerto puede ser cualquiera q este
 una vez arrancado accedemos al la api
 
 localhost/api
+localhost/admin
+
+el usuario del admin es edx clave edx
+si quieres reiniciar la bd borras el db.sqlite3 y ejecutas
+$ python manage.py syncdb
+
+
