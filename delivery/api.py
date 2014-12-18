@@ -65,6 +65,7 @@ class ComentarioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Comentario
         fields = ('url', 'id', 'cliente', 'comentario', )
+        depth = 1
 
 ########################
 
