@@ -9,6 +9,7 @@ Para usar esta app debes tener instalado pythony pip inicialmente.
 
 habrimos una consola y ejecutamos el siguiente comando de pip para instalar los paquetes requeridos
 
+(si en Windows no te reconoce el comando pip es pq debes agregarlo al la variable de entorno o bien puedes ir al directorio del binario que es en el directorio de instalacion de python carpeta /Scripts)
 $ pip install -r requirements.txt (Es necesario conexion a internet)
 
 Una vez concluido la instalacion solo debemos poner a ejecutar el servidor
