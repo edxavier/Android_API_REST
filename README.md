@@ -25,6 +25,7 @@ localhost/admin
 ```
 
 el usuario del admin es edx clave edx
-si quieres reiniciar la bd borras el db.sqlite3 y ejecutas
+si quieres reiniciar la bd borras el *db.sqlite3* y ejecutas
+
 `$ python manage.py syncdb`
 
