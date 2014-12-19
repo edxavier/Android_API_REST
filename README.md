@@ -14,7 +14,7 @@ habrimos una consola y ejecutamos el siguiente comando de pip para instalar los 
 
 Una vez concluido la instalacion solo debemos poner a ejecutar el servidor
 
-`$ python manage.py runserver 0.0.0.0:8000` (el puerto puede ser cualquiera q este libre)
+`$ python manage.py runserver 0.0.0.0:8000` *(el puerto puede ser cualquiera q este libre)*
 
 una vez arrancado accedemos al la api
 
