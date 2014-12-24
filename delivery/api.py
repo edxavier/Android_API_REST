@@ -49,13 +49,10 @@ class RestauranteSerializer(serializers.HyperlinkedModelSerializer):
 class PedidoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Pedido
-        fields = ('url', 'id', 'cliente', 'telefono', 'direccion', 'total', 'estado', 'restaurante', 'detallepedido_set', )
+        #fields = ('url', 'id', 'cliente', 'telefono', 'direccion', 'total', 'estado', 'restaurante',  )
         #depth = 1
 
 
-class DetallePedidoSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = DetallePedido
 
 class ClienteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -64,8 +61,8 @@ class ClienteSerializer(serializers.HyperlinkedModelSerializer):
 class ComentarioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Comentario
-        fields = ('url', 'id', 'cliente', 'comentario', )
-        depth = 1
+        #fields = ('url', 'id', 'cliente', 'comentario', )
+
 
 ########################
 
@@ -93,12 +90,10 @@ class PedidoViewSet(viewsets.ModelViewSet):
     filter_fields = ('id', 'cliente', 'telefono', 'estado')
 
 
-class DetallePedidoViewSet(viewsets.ModelViewSet):
-    queryset = DetallePedido.objects.all()
-    serializer_class = DetallePedidoSerializer
-
 
 class ComentarioViewSet(viewsets.ModelViewSet):
     queryset = Comentario.objects.all()
     serializer_class = ComentarioSerializer
+
+
 

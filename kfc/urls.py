@@ -6,10 +6,11 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 router.register(r'menu', MenuViewSet)
 router.register(r'pedido', PedidoViewSet)
-router.register(r'detalle_pedido', DetallePedidoViewSet)
+#router.register(r'detalle_pedido', DetallePedidoViewSet)
 router.register(r'restaurantes', RestaurantesViewSet)
 router.register(r'clientes',ClienteViewSet)
 router.register(r'comentarios',ComentarioViewSet)
+#router.register(r'comentarios_Post',ComentarioPOST_ViewSet)
 
 #menu_resource = MenuResource()
 
