@@ -58,14 +58,17 @@ class Pedido(models.Model):
     social_id = models.CharField(max_length=100)
     telefono = models.CharField(max_length=100)
     direccion = models.CharField(max_length=100)
-    menu = models.CharField(max_length=100)
-    cantidad = models.IntegerField()
-    total = models.FloatField()
     estado = models.CharField(choices=TIPO_ESTADO, max_length=30, )
 
     def __unicode__(self):
         return " orden:" + str(self.id)
 
+
+class DetallePedido(models.Model):
+    pedido = models.ForeignKey(Pedido)
+    menu = models.CharField(max_length=100)
+    cantidad = models.IntegerField()
+    total = models.FloatField()
 
 #------------------------------------------------------------------------
 class Comentario(models.Model):

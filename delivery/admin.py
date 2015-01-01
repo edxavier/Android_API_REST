@@ -18,5 +18,5 @@ class MenuAdmin(admin.ModelAdmin):
 
 admin.site.register(Cliente)
 admin.site.register(Pedido)
-#admin.site.register(DetallePedido)
+admin.site.register(DetallePedido)
 admin.site.register(Comentario)

@@ -58,6 +58,11 @@ class ClienteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Cliente
 
+
+class DetallePedidoSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = DetallePedido
+
 class ComentarioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Comentario
@@ -94,6 +99,10 @@ class PedidoViewSet(viewsets.ModelViewSet):
 class ComentarioViewSet(viewsets.ModelViewSet):
     queryset = Comentario.objects.all()
     serializer_class = ComentarioSerializer
+
+class DetallePedidoViewSet(viewsets.ModelViewSet):
+    queryset = DetallePedido.objects.all()
+    serializer_class = DetallePedidoSerializer
 
 
 
