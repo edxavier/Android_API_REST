@@ -69,6 +69,8 @@ class DetallePedido(models.Model):
     menu = models.CharField(max_length=100)
     cantidad = models.IntegerField()
     total = models.FloatField()
+    def __unicode__(self):
+        return " detalle:" + str(self.id)
 
 #------------------------------------------------------------------------
 class Comentario(models.Model):
@@ -77,3 +79,5 @@ class Comentario(models.Model):
     comentario = models.CharField(max_length=400)
     def __unicode__(self):
         return self.cliente
+
+

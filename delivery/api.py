@@ -92,7 +92,7 @@ class RestaurantesViewSet(viewsets.ReadOnlyModelViewSet):
 class PedidoViewSet(viewsets.ModelViewSet):
     queryset = Pedido.objects.all()
     serializer_class = PedidoSerializer
-    filter_fields = ('id', 'cliente', 'telefono', 'estado')
+    filter_fields = ('id', 'social_id', 'telefono', 'estado')
 
 
 
